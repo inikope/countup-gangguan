@@ -11,11 +11,12 @@
       var now = new Date;
 
       var remain = ((now - start) / 1000);
+      var hhh = pad((remain / 100 / 60 / 60));
       var hh = pad((remain / 60 / 60));
       var mm = pad((remain / 60) % 60);
       var ss = pad(remain % 60);
       document.getElementById('countdown').innerHTML =
-        hh + ":" + mm + ":" + ss;
+        hhh + "" + hh + ":" + mm + ":" + ss;
       setTimeout(tick, 1000);
     }
   
