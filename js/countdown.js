@@ -8,7 +8,7 @@
     }
 
     function pads(num) {
-      return ("0" + parseInt(num));
+      return (parseInt(num));
     }
   
     function tick() {
