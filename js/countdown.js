@@ -13,6 +13,8 @@
   
     function tick() {
       var now = new Date;
+      start.setHours(10, 52, 0); // 11pm
+      start.setDate(18)
 
       var remain = ((now - start) / 1000);
       var hh = pad((remain / 60 / 60));
