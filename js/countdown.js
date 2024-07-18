@@ -1,7 +1,7 @@
 {
     var start = new Date;
-    start.setHours(19, 34, 0); // 11pm
-    start.setDate(11)
+    start.setHours(19, 34, 0);
+    start.setDate(11);
   
     function pad_two(num) {
       return ("0" + parseInt(num)).substr(-2);
@@ -13,8 +13,8 @@
   
     function tick() {
       var now = new Date;
-      now.setHours(10, 52, 0); // 11pm
-      now.setDate(18)
+      now.setHours(10, 52, 0);
+      now.setDate(18);
 
       var remain = ((now - start) / 1000);
       var hh = pad((remain / 60 / 60));
